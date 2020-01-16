@@ -108,10 +108,12 @@ public:
     Eigen::MatrixXd S_;
 
     //measurement noise covariance matrix
-    Eigen::MatrixXd R_laser_, R_radar_;
+    Eigen::MatrixXd R_laser_;
+    Eigen::MatrixXd R_radar_;
 
     //X and Z centered matrix
-    Eigen::MatrixXd X_centered_, Z_centered_;
+    Eigen::MatrixXd X_centered_;
+    Eigen::MatrixXd Z_centered_;
 
     // current NIS for radar
     double NIS_radar_;
