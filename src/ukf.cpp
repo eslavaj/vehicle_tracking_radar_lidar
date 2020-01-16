@@ -173,13 +173,13 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package)
 	{
 		PredictRadarMeasurement();
 		NIS_radar_ = (meas_package.raw_measurements_-z_pred_).transpose()*S_.inverse()*(meas_package.raw_measurements_-z_pred_);
-		std::cout << "NIS RADAR: " << NIS_radar_ << std::endl;
+		//std::cout << "NIS RADAR: " << NIS_radar_ << std::endl;
 	}
 	else
 	{
 		PredictLaserMeasurement();
 		NIS_laser_ = (meas_package.raw_measurements_-z_pred_).transpose()*S_.inverse()*(meas_package.raw_measurements_-z_pred_);
-		std::cout << "NIS LASER: " << NIS_laser_ << std::endl;
+		//std::cout << "NIS LASER: " << NIS_laser_ << std::endl;
 	}
 
 	UpdateState(meas_package);

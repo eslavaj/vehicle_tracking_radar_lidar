@@ -15,8 +15,8 @@ add_definitions(${PCL_DEFINITIONS})
 list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 
 
-add_executable (ukf_highway src/main.cpp src/ukf.cpp src/tools.cpp src/render/render.cpp)
-target_link_libraries (ukf_highway ${PCL_LIBRARIES})
+add_executable (vehicle_tracking src/main.cpp src/ukf.cpp src/tools.cpp src/render/render.cpp)
+target_link_libraries (vehicle_tracking ${PCL_LIBRARIES})
 
 
 
