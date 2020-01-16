@@ -4,6 +4,7 @@
 
 //#include "render/render.h"
 #include "highway.h"
+#include <pcl/common/common.h>
 
 int main(int argc, char** argv)
 {
