@@ -1,7 +1,10 @@
 # Vehicle tracking with radar and lidar
 Contains vehicle tracking implementation using Kalman filters to fusion radar and lidar data
 
-
+Vehicle tracking and state estimation
+- PCL for LIDAR signals.
+- Constant Turn Rate and Velocity magnitude model (CTRV).
+- Position and velocity estimation with unscented kalman filters.
 
 
 ## Dependencies
